@@ -3,7 +3,7 @@ The initial repo for Markless Engineering's debut project
 
 ### How do I collaborate on the Markless-Engineering project?
 
-Ask marku22 to add you to the repository as a collaborator. 
+Ask markku22 to add you to the repository as a collaborator. 
 
 You will use Git to make a local copy of the repository on your computer. This will allow you to make small but significant changes and share them with the team without breaking anything. We're using the "Git Feature Branch Workflow." You can learn more about it [here](https://fi.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 
