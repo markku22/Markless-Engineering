@@ -1,5 +1,3 @@
-DO NOT FOLLOW THESE INSTRUCTIONS-I WILL UPDATE FOR LINUX
-
 # Markless-Engineering
 The initial repo for Markless Engineering's debut project
 
@@ -9,60 +7,48 @@ Ask markku22 to add you to the repository as a collaborator.
 
 You will use Git to make a local copy of the repository on your computer. This will allow you to make small but significant changes and share them with the team without breaking anything. We're using the "Git Feature Branch Workflow." You can learn more about it [here](https://fi.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 
-First, think about where you want to store the repository on your computer.
+For our Drupal projects, we are going to be storing our local repository in a folder or directory that is only visible from the Linux command line (bash).
 
-You could call your Markless-Engineering project directory something like this (use your own student number!):
+You will call your Markless-Engineering project directory something like this (use your own student number!):
 
 ```git
-    C:\Users\s1900123\Markless-Engineering
+    s1900123@FHZV7S2-BC:/home/s1900529/Markless-Engineering/
 ```
 
-This guide describes how to manage a project using the Windows Command Prompt app. A future edit will add the directions for using the Linux command line tool. 
+This guide describes how to manage a project using the Linux command line tool bash. 
 
-To start Windows Command Prompt click the magnifying glass icon on the bottom left corner of your screen. Type `command prompt` into the Windows search (click the magnifying glass icon on the bottom left corner of your screen). As you begin to type the search result will appear above.  Click the Command Prompt icon highlighted in blue to open the app. 
+To start Windows Command Prompt click the magnifying glass icon on the bottom left corner of your screen. Type `bash` into the Windows search (click the magnifying glass icon on the bottom left corner of your screen). As you begin to type the search result will appear above.  Click the bash icon highlighted in blue to open the app. 
 
 Understand when using the command prompt you should pay attention to what folder or directory you're in. The cursor usually shows you the present working directory or PWD. 
 
-Your command prompt might open in the H drive so the cursor prompt may look like this:
+Your command prompt might open looking like this:
 
 ```git
-    H:\>
+    s1900529@FHZV7S2-BC:/mnt/c/Windows/System32
 ```
 
-To move to the C drive type this:
+To move to the /home/ directory type this:
 
 ```git
-    C:
+    cd /home/
 ```
 
 Now the cursor prompt looks like this:
 
 ```git
-    C:\>
+    s1900123@FHZV7S2-BC:/home$
 ```
 
-Now type the following to move to the Users directory:
+Now type the following to move into your student user directory (use your student number):
 
 ```git
-    cd users
-```
-
-Your cursor prompt will look like this:
-
-```git
-    C:\Users>
-```
-
-Now type the following (using your own student ID number) to enter your user directory:
-
-```git
-    cd s100123
+    cd s1900123
 ```
 
 Your cursor prompt will look like this:
 
 ```git
-    C:\Users\s1900123>
+    s1900123@FHZV7S2-BC:~$
 ```
 
 If you want to see a list of the folders that are already in the directory, type the following:
@@ -96,7 +82,7 @@ Move into the Markless-Engineering folder by typing:
 Your cursor will look like this:
 
 ```git
-    C:\Users\s1900123\Markless-Engineering>
+    s1900123@FHZV7S2-BC:~/Markless-Engineering$
 ```
 
 You might not be able to see it, and you don’t necessarily need to see it but there *is* a hidden .git folder in the Markless-Engineering directory. This folder contains the git magic that makes everything work. 
@@ -122,13 +108,13 @@ You're good to go!
 Confirm that you are in the correct directory by typing:
 
 ```git
-    cd
+    pwd
 ```
 
-You'll see the following:
+This stands for `present working directory`. You'll see the following:
 
 ```git
-    C:\Users\s1900123\Markless-Engineering>
+    /home/s1900123/Markless-Engineering
 ```
 
 If you see something else, you are in the wrong directory and you will have to use the `cd` command sequence detailed above to move to the correct directory.
@@ -170,7 +156,7 @@ The updates on the remote master will also be listed.
 
 **IMPORTANT!!!** Create a new feature branch to start working on and making any changes to the repo. You should work on one task at a time, and have a dedicated branch for any task you're working on. Small, discrete changes are a good thing!
 
-Create a new feature branch by typing `branch` followed by a branch name that describes the task you plan to work on such as game_logic_branch or countdown_view_branch:
+Create a new feature branch by typing `git branch` followed by a branch name that describes the task you plan to work on such as game_logic_branch or countdown_view_branch:
 
 ```git
     git branch <your branch name- don't include the < > tags!>
@@ -188,23 +174,22 @@ To see what files and folders are available to work on type:
     dir
 ```
 
-To work on an existing file, type the name of the file you want to work on. So to update the existing README.md file type:
-
-```git
-    README.md
-```
-That file automatically launches in your default IDE (Visual Studio Code).
-
 To create a new file type:
 
 ```git
-    type nul > <your file name *with* the extension- don't include the < > tags!>
+    touch <your file name *with* the extension- don't include the < > tags!>
 ```
+
+To work on an existing file, type `code-insiders` and the name of the file you want to work on. So to update the existing README.md file type:
+
+```git
+    code-insiders README.md
+```
+That file will automatically launch in your default IDE (Visual Studio Insiders).
 
 Your new file will be created and launch in Visual Studio.
 
 Start doing stuff!
-
 
 ## How do I stage, commit and push my changes?
 
@@ -303,5 +288,4 @@ Go to the following web address:
 
 Go to the `Branch:master` drop down menu and choose your branch. Enter your branch name at the `Switch branches\tags` drop down box or just click on your branch name. Now the drop down menu will say `Branch:<your branch name without including the < > tags>`. Click on the `New Pull Request` box and follow the instructions there. 
     
-
 ### Happy coding :)
