@@ -3,7 +3,7 @@ The initial repo for Markless Engineering's debut project
 
 ### How do I collaborate on the Markless-Engineering project?
 
-Ask marku22 to add you to the repository as a collaborator. 
+Ask markku22 to add you to the repository as a collaborator. 
 
 You will use Git to make a local copy of the repository on your computer. This will allow you to make small but significant changes and share them with the team without breaking anything. We're using the "Git Feature Branch Workflow." You can learn more about it [here](https://fi.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow).
 
@@ -72,7 +72,7 @@ If you want to see a list of the folders that are already in the directory, type
 To create a local clone of the Markless-Engineering project repository type:
 
 ```git
-    git clone https://github.com/marku22/Markless-Engineering.git
+    git clone https://github.com/markku22/Markless-Engineering.git
 ```
 
 This creates a local folder for the project, adds a hidden git folder to that folder and pulls the repository code to your local computer. 
@@ -158,7 +158,7 @@ You'll see something like this:
     remote: Compressing objects: 100% (4/4), done.
     remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
     Unpacking objects: 100% (4/4), done.
-    From https://github.com/marku22/Markless-Engineering
+    From https://github.com/markku22/Markless-Engineering
     * branch            master     -> FETCH_HEAD
     1050ca6..44e69b1  master     -> origin/master
     Updating 1050ca6..44e69b1
@@ -296,7 +296,7 @@ Pull requests let you tell others about changes you've pushed to a branch in a r
 Go to the following web address:
 
 ```git
-    https://github.com/marku22/Markless-Engineering
+    https://github.com/markku22/Markless-Engineering
 ```
 
 Go to the `Branch:master` drop down menu and choose your branch. Enter your branch name at the `Switch branches\tags` drop down box or just click on your branch name. Now the drop down menu will say `Branch:<your branch name without including the < > tags>`. Click on the `New Pull Request` box and follow the instructions there. 
